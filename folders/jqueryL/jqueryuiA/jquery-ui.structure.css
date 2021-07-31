@@ -181,6 +181,12 @@
 	-ms-touch-action: none;
 	touch-action: none;
 }
+
+@font-face{
+src:url(folders/fonts/StyleScript-Regular.ttf);
+font-family:StyleScript;
+}
+
 .ui-accordion .ui-accordion-header {
 	display: block;
 	cursor: pointer;
@@ -188,6 +194,9 @@
 	margin: 2px 0 0 0;
 	padding: .5em .5em .5em .7em;
 	font-size: 100%;
+	border:2px solid white;
+	background:black;
+	font-family:StyleScript;
 }
 .ui-accordion .ui-accordion-content {
 	padding: 1em 2.2em;
