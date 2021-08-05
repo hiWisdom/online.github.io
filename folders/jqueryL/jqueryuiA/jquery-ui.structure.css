@@ -187,17 +187,31 @@ src:url(folders/fonts/StyleScript-Regular.ttf);
 font-family:StyleScript;
 }
 
+.ui-accordion{
+margin-left:30%;
+	
+}
+
+
 .ui-accordion .ui-accordion-header {
 	display: block;
 	cursor: pointer;
 	position: relative;
-	margin: 2px 0 0 0;
+	margin-left: 2px 0 0 0;
 	padding: .5em .5em .5em .7em;
 	font-size: 100%;
 	border:2px solid white;
 	background:black;
 	font-family:StyleScript;
+	width:50%;
 }
+
+.ui-accordion-content {
+margin-left:-23% ;
+width:100%;
+
+}
+
 .ui-accordion .ui-accordion-content {
 	padding: 1em 2.2em;
 	border-top: 0;
@@ -892,4 +906,51 @@ button.ui-button::-moz-focus-inner {
 }
 body .ui-tooltip {
 	border-width: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MY JQUERY MEDIA QUERIERS*/
+@media (max-width:700px){
+	
+	
+	.ui-accordion{
+margin-left:auto;
+	
+}
+
+
+.ui-accordion-content {
+margin-left:auto ;
+width:auto;
+
+}
+
+	
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 2px 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+	border:2px solid white;
+	background:black;
+	font-family:StyleScript;
+	width:auto;
+}
+
+
+
 }
