@@ -33,6 +33,8 @@
 
 
 <style>
+
+
 *{color:white;margin:0; font-family:StyleScript; font-size:20px;letter-spacing:3px;}
 #markstyling{color:black}
 #ui-id-1 > ui-accordion-header-icon{color:black;}
@@ -46,6 +48,16 @@ p{letter-spacing:2px;word-spacing:2px;}
 li{list-style:none;}
 .panel-header-title{letter-spacing:2px;word-spacing:2px;color:white;font-weight:bolder;font-family:Bradley Hand ITC;}
 .content-date-update{text-align:center;font-size:1px}
+.effects-buttons{background:black;}
+
+
+content{ position:relative; border:3px inset black;border-bottom:5%; width:25%; height:15%;text-align:center;line-height:59%; animation:anibackgrd;
+}
+h5{transition: font 2s linear; animation:anistyle 6s infinite 2s ease-in-out alternate ; color:green;}  
+ @keyframes anistyle{ 0%{font-size:0px;} 10%{font-size:2px;} 20%{font-size:4px;} 30%{font-size:6px;} 40%{font-size:8px;} 50%{font-size:10px;} 100%{color:green;background:black;border-radius:30%;padding:5%;}}
+ha5{} hb5{}
+
+
 
 @font-face{
 src:url(folders/fonts/PaletteMosaic-Regular.ttf);
@@ -61,15 +73,33 @@ font-family:StyleScript;
 
 h4{font-family: 'pacifico', cursive;}
 
-/*@media (min-width:800px){
-#ui-id-3, #ui-id-4, #ui-id-5, #ui-id-6, #ui-id-7, #ui-id-8{margin-left:700px;}
-}*/
-</style>
+@media (max-width:700px){
+/*#ui-id-3, #ui-id-4, #ui-id-5, #ui-id-6, #ui-id-7, #ui-id-8{margin-left:700px;}*/
+#animation-body{index:10; margin-left:40%; }
+}
 
+
+#animation-body{index:10; margin-left:47%; }
+
+. panel-animation-body {position:absolute; height: 50vh; index:10; margin-left:47%; }
+
+#animation-image {
+background-image:url(folders/Images/MyAnimationImage.png);
+width:37px;
+height: 78px;
+animation: moonWalk 1.4s steps(4) infinite alternate;
+}
+@keyframes moonWalk{
+from{background-position:0px;}
+to{background-position:-862px;}
+}
+</style>
+<!--h132
+w652--->
 </HEAD>
 
 
-<Body>
+<Body class="dark white">
 
 
 
@@ -77,7 +107,14 @@ h4{font-family: 'pacifico', cursive;}
 <div id="orodje">
 <div id="akpotor">
 <h3 class="lead font-hello" style="font-weight:bolder;font-size:50px;">Hello,</h3>
-<h4 class="font-name">My Name is <span style="font-weight:bolder;color:white;font-size:25px;">WISDOM</span></h4><img src="photoblack.jpg" width="70px" height="50px"/>
+<h4 class="font-name">My Name is <span style="font-weight:bolder;color:white;font-size:25px;">WISDOM</span></h4>
+
+<content>
+	<h5>Thank you for visiting.</h5>
+</content>
+
+<!---<div id="animation-body"> <div id="animation-image"></div> </div><img src="photoblack.jpg" width="70px" height="50px"/>--->
+<!--<div id="background-effects-buttons"><button class="effects-buttons" id="effect-button-white" onclick="effectButtonWhite()">White Color</button> <button class="effects-buttons" id="effect-button-dark" onclick="effectButtonDark()">Dark Color</button></div>
 <mark id="markstyling">You are welcome to my webpage<BR><!--Getting to know me, see below---></mark>
 </div>
 </div>
@@ -95,6 +132,10 @@ h4{font-family: 'pacifico', cursive;}
 
 			<h3 class="panel-header-title">About-me</h3>
 			<div>
+			
+
+<!--<div id="animation-body" class=" panel-animation-body"> <div id="animation-image" class=" panel-animation-image"></div> </div>-->
+
 			
 		<div class="About-me About-me-one">
 			
@@ -187,8 +228,18 @@ h4{font-family: 'pacifico', cursive;}
 </footer>
 
 
-<script>
-</script>
+
+
+
+
+
+
+
+
+
+
+
+<script></script>
 
 
 <script src="folders/jqueryL/jquery.js"></script>
@@ -198,6 +249,19 @@ h4{font-family: 'pacifico', cursive;}
 $(document).ready(function(){
 
 $(".About-me").accordion({active: "none",collapsible:true, animate: 700, heightStyle:"content", icons:{header:"ui-icon-plus", activeHeader:"ui-icon-minus"}});
+
+/*$("#effect-button-white").click( function(){
+
+$(.white).removeClass();
+});
+
+
+$("#effect-button-dark").click( function(){
+
+$(.dark).addClass();
+});*/
+
+
 //$("#divA").accordion({active: "none",collapsible:true, animate: 700, heightStyle:"content", icons:{header:"ui-icon-plus", activeHeader:"ui-icon-minus"}});
 //$("#divB").accordion({active: "none",collapsible:true, animate: 700, heightStyle:"content", icons:{header:"ui-icon-plus", activeHeader:"ui-icon-minus"}});
 
