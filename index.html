@@ -35,7 +35,7 @@
 <style>
 
 
-*{color:white;margin:0; font-family:StyleScript; font-size:20px;letter-spacing:3px;}
+*{color:white;margin:0; font-family:Pompiere-Regular; font-size:20px;letter-spacing:3px;}
 #markstyling{color:black}
 #ui-id-1 > ui-accordion-header-icon{color:black;}
 #ui-id-3, #ui-id-4, #ui-id-5, #ui-id-6, #ui-id-7, #ui-id-8{background:black;border:none;}
@@ -43,7 +43,7 @@ body{height:95vh; background:linear-gradient(#040403,black,#061b14,black);}
 #orodje{border:3px dashed black;border-bottom:none;margin:20px;text-align:center;}
 #About-me {position:relative;margin-left:auto;margin-right:auto;}
 #About-me h3{margin:20px 20px;}
-.contentA, #akpotor{line-height:2em;font-family:StyleScript;}
+.contentA, #akpotor{line-height:2em;font-family:Pompiere-Regular;}
 p{letter-spacing:2px;word-spacing:2px;}
 li{list-style:none;}
 .panel-header-title{letter-spacing:2px;word-spacing:2px;color:white;font-weight:bolder;font-family:Bradley Hand ITC;}
@@ -53,10 +53,33 @@ li{list-style:none;}
 
 content{ position:relative; border:3px inset black;border-bottom:5%; width:25%; height:15%;text-align:center;line-height:59%; animation:anibackgrd;
 }
-h5{transition: font 2s linear; animation:anistyle 6s infinite 2s ease-in-out alternate ; color:green;}  
- @keyframes anistyle{ 0%{font-size:0px;} 10%{font-size:2px;} 20%{font-size:4px;} 30%{font-size:6px;} 40%{font-size:8px;} 50%{font-size:10px;} 100%{color:green;background:black;border-radius:30%;padding:5%;}}
+h5{font-size:100%; transition: all 2s linear; animation:anistyle 6s infinite 3s ease-in-out alternate ; color:green;}  
+ @keyframes anistyle{
+	0%{color:red; font-size:100%;}
+    5%{color:yellow; font-size:95%;}
+    10%{color:green; font-size:90%;}
+    15%{color:red; font-size:85%;}
+    20%{color:yellow; font-size:80%;}
+    25%{color:green; font-size:75%;}
+	30%{color:green; font-size:70%;}
+	35%{color:red; font-size:65%;}
+    40%{color:yellow; font-size:60%;}
+    45%{color:green; font-size:55%;}
+    50%{color:red; font-size:50%;}
+    55%{color:yellow; font-size:45%;}
+    60%{color:green; font-size:40%;}
+	65%{color:green; font-size:35%;}
+	70%{color:red; font-size:30%;}
+    75%{color:yellow; font-size:25%;}
+    80%{color:green; font-size:20%;}
+    85%{color:red; font-size:15%;}
+    90%{color:yellow; font-size:10%;}
+    95%{color:green; font-size:5%;}
+	100%{color:green; font-size:0%;}
+	}	
+ /*0%{font-size:0px;} 10%{font-size:2px;} 20%{font-size:4px;} 30%{font-size:6px;} 40%{font-size:8px;} 50%{font-size:10px;} 100%{color:green;background:black;border-radius:30%;padding:5%;}}
 ha5{} hb5{}
-
+*/
 
 
 @font-face{
@@ -65,8 +88,8 @@ font-family:PaletteMosaic;
 }
 
 @font-face{
-src:url(folders/fonts/StyleScript-Regular.ttf);
-font-family:StyleScript;
+src:url(folders/fonts/Pompiere-Regular.ttf);
+font-family:Pompiere-Regular;
 }
 
 .font-hello{font-family:PaletteMosaic;}
@@ -92,6 +115,20 @@ animation: moonWalk 1.4s steps(4) infinite alternate;
 @keyframes moonWalk{
 from{background-position:0px;}
 to{background-position:-862px;}
+}
+
+
+.back_to_top {background: black; position:fixed; bottom:16px; right:32px; width:50px; height:50px; border-radius: 50%; display: flex; align-items: center; justify-content:center; font-size:32px; color:#1f1f1f; text-decoration:none; opacity:0; pointer-events: none; transition:all .3s; animation:toTop 3s ease infinite;}
+
+.back_to_top.active {opacity:1; pointer-events: auto; bottom: 32px;}
+
+@keyframes toTop {
+    10%{color:red;}
+    30%{color:yellow;}
+    50%{color:green;}
+    70%{color:red;}
+    90%{color:yellow;}
+    100%{color:green;}
 }
 </style>
 <!--h132
@@ -130,7 +167,7 @@ w652--->
 
 		<div class="About-me About-me-one">
 
-			<h3 class="panel-header-title">About-me</h3>
+			<h3 class="panel-header-title">About me</h3>
 			<div>
 			
 
@@ -208,6 +245,7 @@ w652--->
 
 			</div>
 
+    <a id="back_to_top" class="back_to_top" href="#">^</a>
 			</div>
 
 		</div>
@@ -221,9 +259,10 @@ w652--->
 
 
 <footer>
-<p class="content-date-update">
-<samp><i>Orodje Wisdom</i>-</samp><span style="font-style:italic;" id="content-date-update">&copy </span> &nbsp <span style="font-style:italic;" id="content-date-update"> Sun Aug 01 2021  -</span>&nbsp&nbsp<span style="font-style:italic;" id="javascripted-content-date-update"><script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script>.</span>
-</p>
+
+<div style="display:flex; margin:50px;padding:20px;">
+<div style="display:flex; margin:10px;padding:10px;"><script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script></div> <div style="display:flex; margin:10px;padding:10px;"><h6 id="time"></h6></div>
+</div>
 
 </footer>
 
@@ -273,6 +312,42 @@ $(.dark).addClass();
 
 });
 
+
+setInterval(()=>{
+const time = document.querySelector("#time");
+let date = new Date();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+let seconds = date.getSeconds();
+let day_night = "AM";
+if(hours > 12) {
+day_night ="PM";
+hours = hours - 12;
+}
+if(hours < 10) {
+hours = "0" + hours;
+}
+if(minutes < 10) {
+minutes = "0" + minutes;
+}
+if(seconds < 10) {
+seconds = "0" + seconds;
+}
+time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
+});
+
+
+
+var toTop = document.querySelector(".back_to_top");
+window.addEventListener("scroll", ()=>{
+if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+} else {
+    toTop.classList.remove("active");
+}
+
+
+})
 </script>
 
 
