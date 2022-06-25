@@ -1,358 +1,251 @@
-<!DOCTYPE HTML>
-<HTML>
-
-
-
-<HEAD>
-
-<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorgin> <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
-
-
-<TITLE>Orodje Wisdom Akpotor</TITLE>
-<META NAME="Description" content="Orodje Wisdom Akpotor"/>
-<META NAME="author" content="Orodje Wisdom Akpotor"/>
-<META NAME="KEYWORD" CONTENT="Orodje, Wisdom, Akpotor,Orodje Wisdom Akpotor"/>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orodje Wisdom Akpotor Website 96.10.27.</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="folders/bootstrap/css/bootstrap.css"/>
-<link rel="stylesheet" href="folders/fontawesome/css/all.css"/>
-<link rel="stylesheet" href="folders/fontawesome/css/fontawesome.css"/>
-<link rel="stylesheet" href="folders/jqueryL/jquery-ui/jquery-ui.css">
-<link rel="stylesheet" href="folders/jqueryL/jqueryuiA/jquery-ui.css">
-<link rel="stylesheet" href="folders/jqueryL/jqueryuiA/jquery-ui.structure.css">
-<link rel="stylesheet" href="folders/jqueryL/jqueryuiA/jquery-ui.theme.css">
-
-
-<script src="folders/bootstrap/js/bootstrap.js"></script>
-<script src="folders/fontawesome/js/all.js"></script>
-<script src="folders/queryL/jqueryuiA/jquery-ui.js"></script>
-
-
-
-
-
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="pictures/20220522_165441.jpg">
 <style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
-
-*{color:white;margin:0; font-family:Pompiere-Regular; font-size:20px;letter-spacing:3px;}
-#markstyling{color:black}
-#ui-id-1 > ui-accordion-header-icon{color:black;}
-#ui-id-3, #ui-id-4, #ui-id-5, #ui-id-6, #ui-id-7, #ui-id-8{background:black;border:none;}
-body{height:95vh; background:linear-gradient(#040403,black,#061b14,black);}
-#orodje{border:3px dashed black;border-bottom:none;margin:20px;text-align:center;}
-#About-me {position:relative;margin-left:auto;margin-right:auto;}
-#About-me h3{margin:20px 20px;}
-.contentA, #akpotor{line-height:2em;font-family:Pompiere-Regular;}
-p{letter-spacing:2px;word-spacing:2px;}
-li{list-style:none;}
-.panel-header-title{letter-spacing:2px;word-spacing:2px;color:white;font-weight:bolder;font-family:Bradley Hand ITC;}
-.content-date-update{text-align:center;font-size:1px}
-.effects-buttons{background:black;}
-
-
-content{ position:relative; border:3px inset black;border-bottom:5%; width:25%; height:15%;text-align:center;line-height:59%; animation:anibackgrd;
-}
-h5{font-size:100%; transition: all 2s linear; animation:anistyle 6s infinite 3s ease-in-out alternate ; color:green;}  
- @keyframes anistyle{
-	0%{color:red; font-size:100%;}
-    5%{color:yellow; font-size:95%;}
-    10%{color:green; font-size:90%;}
-    15%{color:red; font-size:85%;}
-    20%{color:yellow; font-size:80%;}
-    25%{color:green; font-size:75%;}
-	30%{color:green; font-size:70%;}
-	35%{color:red; font-size:65%;}
-    40%{color:yellow; font-size:60%;}
-    45%{color:green; font-size:55%;}
-    50%{color:red; font-size:50%;}
-    55%{color:yellow; font-size:45%;}
-    60%{color:green; font-size:40%;}
-	65%{color:green; font-size:35%;}
-	70%{color:red; font-size:30%;}
-    75%{color:yellow; font-size:25%;}
-    80%{color:green; font-size:20%;}
-    85%{color:red; font-size:15%;}
-    90%{color:yellow; font-size:10%;}
-    95%{color:green; font-size:5%;}
-	100%{color:green; font-size:0%;}
-	}	
- /*0%{font-size:0px;} 10%{font-size:2px;} 20%{font-size:4px;} 30%{font-size:6px;} 40%{font-size:8px;} 50%{font-size:10px;} 100%{color:green;background:black;border-radius:30%;padding:5%;}}
-ha5{} hb5{}
-*/
-
-
-@font-face{
-src:url(folders/fonts/PaletteMosaic-Regular.ttf);
-font-family:PaletteMosaic;
-}
-
-@font-face{
-src:url(folders/fonts/Pompiere-Regular.ttf);
-font-family:Pompiere-Regular;
-}
-
-.font-hello{font-family:PaletteMosaic;}
-
-h4{font-family: 'pacifico', cursive;}
-
-@media (max-width:700px){
-/*#ui-id-3, #ui-id-4, #ui-id-5, #ui-id-6, #ui-id-7, #ui-id-8{margin-left:700px;}*/
-#animation-body{index:10; margin-left:40%; }
-}
-
-
-#animation-body{index:10; margin-left:47%; }
-
-. panel-animation-body {position:absolute; height: 50vh; index:10; margin-left:47%; }
-
-#animation-image {
-background-image:url(folders/Images/MyAnimationImage.png);
-width:37px;
-height: 78px;
-animation: moonWalk 1.4s steps(4) infinite alternate;
-}
-@keyframes moonWalk{
-from{background-position:0px;}
-to{background-position:-862px;}
-}
-
-
-.back_to_top {background: black; position:fixed; bottom:16px; right:32px; width:50px; height:50px; border-radius: 50%; display: flex; align-items: center; justify-content:center; font-size:32px; color:#1f1f1f; text-decoration:none; opacity:0; pointer-events: none; transition:all .3s; animation:toTop 3s ease infinite;}
-
-.back_to_top.active {opacity:1; pointer-events: auto; bottom: 32px;}
-
-@keyframes toTop {
-    10%{color:red;}
-    30%{color:yellow;}
-    50%{color:green;}
-    70%{color:red;}
-    90%{color:yellow;}
-    100%{color:green;}
-}
 </style>
-<!--h132
-w652--->
-</HEAD>
+</head>
+<body class="w3-black">
 
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="pictures/20220522_165535.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-<Body class="dark white">
-
-
-
-<header>
-<div id="orodje">
-<div id="akpotor">
-<h3 class="lead font-hello" style="font-weight:bolder;font-size:50px;">Hello,</h3>
-<h4 class="font-name">My Name is <span style="font-weight:bolder;color:white;font-size:25px;">WISDOM</span></h4>
-
-<content>
-	<h5>Thank you for visiting.</h5>
-</content>
-
-<!---<div id="animation-body"> <div id="animation-image"></div> </div><img src="photoblack.jpg" width="70px" height="50px"/>--->
-<!--<div id="background-effects-buttons"><button class="effects-buttons" id="effect-button-white" onclick="effectButtonWhite()">White Color</button> <button class="effects-buttons" id="effect-button-dark" onclick="effectButtonDark()">Dark Color</button></div>
-<mark id="markstyling">You are welcome to my webpage<BR><!--Getting to know me, see below---></mark>
-</div>
-</div>
-</header>
-
-
-
-
-
-<main>
-
-	<div id="About-me">
-
-		<div class="About-me About-me-one">
-
-			<h3 class="panel-header-title">About me</h3>
-			<div>
-			
-
-<!--<div id="animation-body" class=" panel-animation-body"> <div id="animation-image" class=" panel-animation-image"></div> </div>-->
-
-			
-		<div class="About-me About-me-one">
-			
-			
-			<h3 class="panel-header-title"><span style="color:white;">Education Background</span></h3>
-			<div id="About-me-content-one" class="About-me-content About-me-content-one">
-<p class="contentA">Bachelor of Arts, History and International studies.</p>
-
-			</div>
-
-			<h3 class="panel-header-title"><span style="color:white;">Interest</span></h3>
-			<div id="About-me-content-one" class="About-me-content About-me-content-one">
-	<!--		
-<p class="contentA">		i develop website for computer and mobile phones, i love playing video games, going to the beach, eating snacks, cooking, surfing the internet and music.<br> Please know i am always reachable, Bye Bye...</p>--->
-<!--<br>--->
-<ul>
-<li><p class="contentA">Web development.</p></li>
-<li><p class="contentA">Game development.</p></li>
-<li><p class="contentA">Tech development.</p></li>
-<li><p class="contentA">Agriculture.</p></li>
-<li><p class="contentA">National geography.</p></li>
-<li><p class="contentA">Architecture.</p></li>
-<li><p class="contentA">Machine making.</p></li>
-</ul>
-			</div>
-
-
-			<h3 class="panel-header-title"><span style="color:white;">Hobbies</span></h3>
-		<div id="About-me-content-one" class="About-me-content About-me-content-one">
-<ul>
-<li><p class="contentA">Playing Games.</p></li>
-<li><p class="contentA">Outdoors hangout.</p></li>
-<li><p class="contentA">Parties.</p></li>
-<li><p class="contentA">Excursion.</p></li>
-<li><p class="contentA">Meeting new people.</p></li>
-<li><p class="contentA">Traveling.</p></li>
-<li><p class="contentA">Learning new things.</p></li>
-</ul>
-			</div>
-
-			<h3 class="panel-header-title"><span style="color:white;">Skills</span></h3>
-			<div id="About-me-content-one" class="About-me-content About-me-content-one">
-<ul>
-<li><p class="contentA">Computer and web development</p></li>
-<li><p class="contentA">Microsoft office.</p></li>
-<li><p class="contentA">Team work.</p></li>
-<li><p class="contentA">Composure.</p></li>
-<li><p class="contentA">Techniques.</p></li>
-<li><p class="contentA">Finance management.</p></li>
-<li><p class="contentA">Business management.</p></li>
-</ul>
-			</div>
-
-
-			<h3 class="panel-header-title"><span style="color:white;">Occupation/ Projects</span></h3>
-			<div id="About-me-content-one" class="About-me-content About-me-content-one">
-<p class="contentA">Enterprenuer, Web administrator, Web architecture, Web development, Front end development, Project management, Data analyst and management</p>
-<p class="contentA">Hi, check out my web pojects below:</p>
-<ul>
-<li><a class="contentA" href="https://hiwisdom.github.io/hhf.github.io/"><i>www.healthyharvesterfarms.net</i></a></li>
-<li><a class="contentA" href="https://hiwisdom.github.io/hsam.github.io/"><i>Car Website</i></a></li>
-</ul>
-
-			</div>
-
-			<h3 class="panel-header-title"><span style="color:white;">Declaration</span></h3>
-			<div id="About-me-content-one" class="About-me-content About-me-content-one">
-<p class="contentA">I hereby declare that the particulars of information and facts stated herein above are true.</p>
-			</div>
-
-			</div>
-
-    <a id="back_to_top" class="back_to_top" href="#">^</a>
-			</div>
-
-		</div>
-
-	</div>
-
-</main>
-
-
-
-
-
-<footer>
-
-<div style="display:flex; margin:50px;padding:20px;">
-<div style="display:flex; margin:10px;padding:10px;"><script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script></div> <div style="display:flex; margin:10px;padding:10px;"><h6 id="time"></h6></div>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
 </div>
 
-</footer>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+
+
+    <div>
+        
+        <h4 class="w3-jumbo"> <span class="text third_text"></span> Orodje Wisdom Akpotor.</h4>
+
+        <div class="w3-writing-animation-container">    
+          <span class="text first_text">I</span>
+          <span class="text second_text"></span>
+        </div>
+        
+        <span class="w3-writing-animation w3-writing-three"><b><i>Your Computer Software and Website Developement Experience</i></b></span>
+
+    </div>
+
+
+    <img src="pictures/20220522_165441.jpg" alt="boy" class="w3-image" width="992" height="1108">
+
+  </header>
 
 
 
 
 
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hello, my name is Orodje Wisdom Akpotor. i develop computer software using JavaScript, Hypertext markup language, cascading style sheet, JavaScript xtensible language, Hypertext preprocessor, sequal query language, wordpress, react and many more i learn. I love creating and developing computer softwares with people because two heads are better than one. I spend my free time with families and friends playing game and telling stories. 
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Computer Software Developement</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Business Operations and Process</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+<br>
+
+
+<!---Don't release the next section, work is still in progress-->
+<!-- 
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button> --->
+    
+    <!-- Grid for pricing tables -->
+    <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>---->
+<!---End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <!-- <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>John Doe saved us from a web disaster.</p><br>
+    
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than John Doe.</p> -->
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for Portfolio -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> NG, Africa</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +234 7052223261</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: akpotororodje@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone Number" name="Phone Number"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Created by <a href="https://hiwisdom.github.io/online.github.io" target="_blank" class="w3-hover-text-green">Orodje</a> 1996 - <span class="date"></span></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
 
 
 
 
 
-
-
-
-<script></script>
-
-
-<script src="folders/jqueryL/jquery.js"></script>
-<script src="folders/jqueryL/jqueryuiA/jquery-ui.js"></script>
-
-<script>
-$(document).ready(function(){
-
-$(".About-me").accordion({active: "none",collapsible:true, animate: 700, heightStyle:"content", icons:{header:"ui-icon-plus", activeHeader:"ui-icon-minus"}});
-
-/*$("#effect-button-white").click( function(){
-
-$(.white).removeClass();
-});
-
-
-$("#effect-button-dark").click( function(){
-
-$(.dark).addClass();
-});*/
-
-
-//$("#divA").accordion({active: "none",collapsible:true, animate: 700, heightStyle:"content", icons:{header:"ui-icon-plus", activeHeader:"ui-icon-minus"}});
-//$("#divB").accordion({active: "none",collapsible:true, animate: 700, heightStyle:"content", icons:{header:"ui-icon-plus", activeHeader:"ui-icon-minus"}});
-
-//$("#popUpAuth").dialog({draggable: false, closeOnEscape: false, modal: true});
-
-//$("#closeButton").click( function(){
-//$("#popUpAuth").hide();
-//});
-
-});
-
-
-setInterval(()=>{
-const time = document.querySelector("#time");
-let date = new Date();
-let hours = date.getHours();
-let minutes = date.getMinutes();
-let seconds = date.getSeconds();
-let day_night = "AM";
-if(hours > 12) {
-day_night ="PM";
-hours = hours - 12;
-}
-if(hours < 10) {
-hours = "0" + hours;
-}
-if(minutes < 10) {
-minutes = "0" + minutes;
-}
-if(seconds < 10) {
-seconds = "0" + seconds;
-}
-time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
-});
-
-
-
-var toTop = document.querySelector(".back_to_top");
-window.addEventListener("scroll", ()=>{
-if (window.pageYOffset > 100) {
-    toTop.classList.add("active");
-} else {
-    toTop.classList.remove("active");
-}
-
-
-})
-</script>
-
-
-
-
-</Body>
-
-</HTML>
+<script src="main.js"></script>
+</body>
+</html>
