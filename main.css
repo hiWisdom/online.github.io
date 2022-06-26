@@ -1,22 +1,110 @@
 ﻿
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: black; /* Black w/ opacity */
+    padding-top: 60px;
+    margin:0;
+  }
+
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  
+.modal-content {
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */ 
+    margin-top: default;
+    margin: 5px auto; /* 15% from the top and centered */
+    margin-left: 0%;
+  }
+
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
 
 
+
+/*header inner container design*/
+.c1_header_inner_container {
+    border: 3px solid transparent !important; 
+    width: 100% !important;
+    height: 100% !important;
+    justify-content: left !important;
+    align-items: flex-end !important;
+    text-align: left !important;
+    line-height: 0.9cm !important;
+}
+
+/* .c1_about_section_decoration {
+    text-decoration:none;
+}
+
+.c1_about_section_decoration:hover {
+    text-decoration:3px underline green !important;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 5s;
+    width:200px;
+} */
 
 .w3-writing-animation-container {
     position: relative;
 }
 
 
-
-
-
 /*writing animation*/
 
 .text {
     position: relative;
+    font-size: 25px !important;
+    font-variant:small-caps !important;
+    font-feature-settings: "abvf";
+}
+
+.sixth_text {
+    font-style: italic !important;
+    font-weight: bolder !important;
+}
+
+.third_text {
+    font-size: 28px !important;
+    font-weight: bolder !important;
+    font-style: italic !important; 
 }
 
 
+.second_text, .forth_text {
+    text-decoration: underline !important;  
+}
+
+
+/*Web Writing Animation two*/
 .third_text::before {
     content: ""; 
     position: absolute; 
@@ -26,7 +114,7 @@
     height: 100%; 
     right: 0; 
     top: 0; 
-    animation: writingAnimateOne 6s steps(10) infinite;
+    animation: writingAnimateOne 4s steps(8) infinite;
 }
 
 
@@ -40,6 +128,7 @@
 }
 
 
+/*Web Writing Animation two*/
 .second_text:before { 
     content: ""; 
     position: absolute; 
@@ -49,7 +138,7 @@
     height: 100%; 
     left: 0; 
     top: 0; 
-    animation: writingAnimateTwo 6s steps(10) infinite;
+    animation: writingAnimateTwo 4s steps(10) infinite;
 }
 
 
@@ -64,6 +153,83 @@
 
 
 
+@media(max-width:600px) {
+
+    .c1_header_inner_container {
+        margin:0 !important; 
+        margin-top:0.7cm !important;
+        width:1000px  !important;
+        margin-left:-8%  !important;
+        border-left: none !important;
+        border-top: none !important;
+        border-right: none !important;
+        border-bottom: 3px solid white !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        line-height: 5vh !important;
+    }
+
+    .text {
+        font-size: 15px !important;
+        font-variant:small-caps !important;
+    }
+
+    .sixth_text {
+        font-style: italic !important;
+        font-weight: bolder !important;
+    }
+
+    .third_text {
+        font-size: 18px !important;
+        font-weight: bolder !important;
+        font-style: italic !important; 
+    }
+
+    .c1_header_image {
+        width: 20% !important;
+        border:none !important;
+        border-left: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        position:absolute !important;
+        top:5.2% !important;
+        right:1%  !important;
+        height: 3cm !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+    }
+
+    .second_text, .forth_text {
+        text-decoration: underline !important;  
+    }
+}
+
+
+
+
+
+/*Web Writing Animation two*/
+.forth_text::before {
+    content: ""; 
+    position: absolute; 
+    background: black; 
+    border-left: 2px solid white; 
+    width: 100%; 
+    height: 100%; 
+    left: 0; 
+    top: 0; 
+    animation: writingAnimateThree 4s steps(10) infinite;
+}
+
+
+@keyframes writingAnimateThree {
+	40%, 60% {
+		left: 100%;
+	}
+	100% {
+		left: 0%;
+	}
+}
 
 
 
@@ -197,7 +363,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-greyscale,.w3-grayscale{filter:grayscale(75%)}.w3-greyscale-min,.w3-grayscale-min{filter:grayscale(50%)}
 .w3-sepia{filter:sepia(75%)}.w3-sepia-max,.w3-hover-sepia:hover{filter:sepia(100%)}.w3-sepia-min{filter:sepia(50%)}
 .w3-tiny{font-size:10px!important}.w3-small{font-size:12px!important}.w3-medium{font-size:15px!important}.w3-large{font-size:18px!important}
-.w3-xlarge{font-size:24px!important}.w3-xxlarge{font-size:36px!important}.w3-xxxlarge{font-size:48px!important}.w3-jumbo{font-size:64px!important}
+.w3-xlarge{font-size:24px!important}.w3-xxlarge{font-size:36px!important}.w3-xxxlarge{font-size:48px!important}
 .w3-left-align{text-align:left!important}.w3-right-align{text-align:right!important}.w3-justify{text-align:justify!important}.w3-center{text-align:center!important}
 .w3-border-0{border:0!important}.w3-border{border:1px solid #ccc!important}
 .w3-border-top{border-top:1px solid #ccc!important}.w3-border-bottom{border-bottom:1px solid #ccc!important}
