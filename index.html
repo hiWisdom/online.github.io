@@ -8,22 +8,30 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/x-icon" href="pictures/20220522_165441.jpg">
-<style>
-body {
-  overflow:hidden;
-}
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
-</style>
+  <style>
+  body {
+    overflow:hidden;
+  }
+  body,.w3-hover-black:hover{
+    color:#fff!important;
+    background-color:#000!important
+  }
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {width: 120px;background: #222;}
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {margin-left: 120px}
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
+  </style>
+
 </head>
-<body class="w3-black">
+
+<body class="c1_body">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -37,7 +45,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>PROJECTS</p>
   </a>
@@ -52,7 +60,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -76,7 +84,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
 
 
-    <img src="pictures/20220522_165441.jpg" alt="boy" class="w3-image c1_header_image" width="992" height="1108">
+    <img src="pictures/20220522_165535.jpg" alt="boy" class="w3-image c1_header_image" width="992" height="1108">
 
   </header>
 
@@ -86,11 +94,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <hr style="width:200px" class="w3-opacity">
     <h2 class="w3-text-light-grey c1_about_section_decoration">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>Hello, my name is Orodje Wisdom Akpotor. i develop computer software using JavaScript, Hypertext markup language, cascading style sheet, JavaScript xtensible language, Hypertext preprocessor, sequal query language, WordPress, react and many more i learn. I love creating and developing computer softwares with people because two heads are better than one. I spend my free time with families and friends playing games and telling stories. 
     </p>
+    <hr style="width:200px" class="w3-opacity">
     <h3 class="w3-padding-16 w3-text-light-grey c1_about_section_decoration">My Skills</h3>
+    <hr style="width:200px" class="w3-opacity">
     <p class="w3-wide">Computer Software Developement</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:95%"></div>
@@ -179,7 +190,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
+  <div class="w3-padding-64 w3-content" id="projects">
+
+    <hr style="width:200px" class="w3-opacity">
     <h2 class="w3-text-light-grey">Projects</h2>
     <hr style="width:200px" class="w3-opacity">
 
@@ -187,34 +200,208 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
   
-        <div onclick="document.getElementById('login_mode').style.display='block'">
-        <img src="pictures/cake_website_picture.png" style="width:100%">
-        </div>
+        <!-- <div id="c1_project_one">
 
-        <!-- The Modal Login Form -->
-          <div id="login_mode" class="modal">
-            <span style="color:white; font-size:55px;" onclick="document.getElementById('login_mode').style.display='none'" class="close" title="Close">&times;</span>
+            <div class="c1_Slidesshows c1_Slidesshows_fade">
+              <div class="c1_slideshow_number_counter">1 / 3</div>
+                <img src="pictures/slideshow_images/cake_website_picture_body.png" style="width:100%; cursor:grabbing">
+            </div>
+
+              <div class="c1_Slidesshows c1_Slidesshows_fade">
+                <div class="c1_slideshow_number_counter">2 / 3</div>
+                  <img src="pictures/slideshow_images/cake_website_picture_body.png" style="width:100%; cursor:grabbing">
+              </div>
+
+                <div class="c1_Slidesshows c1_Slidesshows_fade">
+                  <div class="c1_slideshow_number_counter">3 / 3</div>
+                    <img src="pictures/slideshow_images/cake_website_picture_body.png" style="width:100%; cursor:grabbing">
+                </div>
+
+
+
+
+              -previous and next slideshow button
+              <a class="c1_slideshow_left_direction" onclick="plusSlides1(-1)">&#10094;</a>
+              <a class="c1_slideshow_right_direction" onclick="plusSlides1(1)">&#10095;</a>
+
+
+              
+              ---dots for slideshows--
+              <div class="c1_dots_for_slideshows">
+                <span class="c1_dot c1_dot_one" onclick="currentSlide1(1)"></span>
+                <span class="c1_dot c1_dot_two" onclick="currentSlide1(2)"></span>
+                <span class="c1_dot c1_dot_three" onclick="currentSlide1(3)"></span>
+              </div>
+
+            </div> -->
+
+          <!-- The Modal Login Form -->
+            <div id="c1_project_modal_mode_one" class="modal">
+            <span style="color:white; font-size:85px; cursor:pointer;" onclick="document.getElementById('c1_project_modal_mode_one').style.display='none'" class="close" title="Close">&times;</span>
 
             <!-- Modal Content -->
             <div class="modal-content animate">
               <div>
                 <a href="https://hiwisdom.github.io/cake_website/cake_website-main" target="_blank">
-                  <img href="" src="pictures/cake_website_picture.png" style="width:80%; height: 80vh; margin-left:10%">      
+                  
+                  <div class="c1_Slidesshows c1_Slidesshows_fade">
+                  <img href="" src="pictures/slideshow_images/slide1/cake_website_picture_body.png" style="width:80%; height: 80vh; margin-left:10%">    
+                  </div>
+             
                 </a>        
               </div>
+
             </div>
-          </div>
+            </div>
   
 
+            <div id="c1_project_one">
+              <!-- Full-width images with number and caption text -->
+              <div class="c1_mySlideshow c1_slideshow_fade">
+                <img src="pictures/slideshow_images/slide1/cake_website_picture_body.png" style="width:100%">
+                <div class="c1_slideshow_text">Caption One</div>
+              </div>
 
+              <div class="c1_mySlideshow c1_slideshow_fade">
+                <img src="pictures/slideshow_images/slide1/cake_website_picture_footer.png" style="width:100%">
+                <div class="c1_slideshow_text">Caption Two</div>
+              </div>
 
-        <img src="/w3images/rocks.jpg" style="width:100%">
+              <div class="c1_mySlideshow c1_slideshow_fade">
+                <img src="pictures/slideshow_images/slide1/cake_website_picture_footer.png" style="width:100%">
+                <div class="c1_slideshow_text">Caption Three</div>
+              </div>       
+            </div>
+             <!-- Next and previous buttons -->
+             <a class="c1_slideshow_prev_btn" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="c1_slideshow_next_btn" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center; margin-top:-0.6cm;">
+              <span class="c1_slideshow_dot c1_slide_dot" onclick="currentSlide(1)"></span>
+              <span class="c1_slideshow_dot c1_slide_dot" onclick="currentSlide(2)"></span>
+              <span class="c1_slideshow_dot c1_slide_dot" onclick="currentSlide(3)"></span>
+
+            </div>
   
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
+            <br>
+            <br>
+            <br>
+            
+
+
+            <div id="c1_project_modal_mode_two" class="modal">
+              <span style="color:white; font-size:85px; cursor:pointer;" onclick="document.getElementById('c1_project_modal_mode_two').style.display='none'" class="close" title="Close">&times;</span>
+  
+              <!-- Modal Content -->
+              <div class="modal-content animate">
+                <div>
+                  <a href="https://hiwisdom.github.io/hsam.github.io/" target="_blank">
+                    
+                    <div class="c1_Slidesshows c1_Slidesshows_fade">
+                    <img href="" src="pictures/slideshow_images/slide2/Screenshot (21).png" style="width:80%; height: 80vh; margin-left:10%">    
+                    </div>
+               
+                  </a>        
+                </div>
+  
+                ---dots for slideshows--
+                <div class="c1_dots_for_slideshows">
+                  <span class="c1_dot c1_dot_one" onclick="currentSlide1(1)"></span>
+                  <span class="c1_dot c1_dot_two" onclick="currentSlide1(2)"></span>
+                  <span class="c1_dot c1_dot_three" onclick="currentSlide1(3)"></span>
+                </div>
+              </div>
+              </div>
+            
+            <div id="c1_project_two">
+              <!-- Full-width images with number and caption text -->
+              <div class="c1_mySlideshow_two c1_slideshow_fade">
+                <img src="pictures/slideshow_images/slide2/Screenshot (21).png" style="width:100%">
+                <div class="c1_slideshow_text">Caption One</div>
+              </div>
+
+              <div class="c1_mySlideshow_two c1_slideshow_fade">
+                <img src="pictures/slideshow_images/slide2/Screenshot (22).png" style="width:100%">
+                <div class="c1_slideshow_text">Caption Two</div>
+              </div>
+
+              <div class="c1_mySlideshow_two c1_slideshow_fade">
+                <img src="pictures/slideshow_images/slide2/Screenshot (23).png" style="width:100%">
+                <div class="c1_slideshow_text">Caption Three</div>
+              </div>       
+            </div>
+             <!-- Next and previous buttons -->
+             <a class="c1_slideshow_prev_btn_two" onclick="plusSlidesTwo(-1)">&#10094;</a>
+             <a class="c1_slideshow_next_btn_two" onclick="plusSlidesTwo(1)">&#10095;</a>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center; margin-top:-0.6cm;">
+              <span class="c1_slideshow_dot_two c1_slide_dot" onclick="currentSlideTwo(1)"></span>
+              <span class="c1_slideshow_dot_two c1_slide_dot" onclick="currentSlideTwo(2)"></span>
+              <span class="c1_slideshow_dot_two c1_slide_dot" onclick="currentSlideTwo(3)"></span>
+
+            </div>
+    
+          <!-- <img src="/w3images/sailboat.jpg" style="width:100%"> -->
+        </div>
 
       <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
+       
+        
+        <div id="c1_project_modal_mode_three" class="modal">
+          <span style="color:white; font-size:85px; cursor:pointer;" onclick="document.getElementById('c1_project_modal_mode_three').style.display='none'" class="close" title="Close">&times;</span>
+
+          <!-- Modal Content -->
+          <div class="modal-content animate">
+            <div>
+              <a href="https://hiwisdom.github.io/hhf.github.io/" target="_blank">
+                
+                <div class="c1_Slidesshows c1_Slidesshows_fade">
+                <img href="" src="pictures/slideshow_images/slide3/Screenshot (18).png" style="width:80%; height: 80vh; margin-left:10%">    
+                </div>
+           
+              </a>        
+            </div>
+
+          </div>
+          </div>
+        
+        <div id="c1_project_three">
+          <!-- Full-width images with number and caption text -->
+          <div class="c1_mySlideshow_three c1_slideshow_fade">
+            <img src="pictures/slideshow_images/slide3/Screenshot (18).png" style="width:100%">
+            <div class="c1_slideshow_text">Caption One</div>
+          </div>
+
+          <div class="c1_mySlideshow_three c1_slideshow_fade">
+            <img src="pictures/slideshow_images/slide3/Screenshot (19).png" style="width:100%">
+            <div class="c1_slideshow_text">Caption Two</div>
+          </div>
+
+          <div class="c1_mySlideshow_three c1_slideshow_fade">
+            <img src="pictures/slideshow_images/slide3/Screenshot (20).png" style="width:100%">
+            <div class="c1_slideshow_text">Caption Three</div>
+          </div>       
+        </div>
+         <!-- Next and previous buttons -->
+         <a class="c1_slideshow_prev_btn_three" onclick="plusSlidesThree(-1)">&#10094;</a>
+         <a class="c1_slideshow_next_btn_three" onclick="plusSlidesThree(1)">&#10095;</a>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center; margin-top:-0.6cm;">
+          <span class="c1_slideshow_dot_three c1_slide_dot" onclick="currentSlideThree(1)"></span>
+          <span class="c1_slideshow_dot_three c1_slide_dot" onclick="currentSlideThree(2)"></span>
+          <span class="c1_slideshow_dot_three c1_slide_dot" onclick="currentSlideThree(3)"></span>
+
+        </div>
+
+
+
+        
         <img src="/w3images/chef.jpg" style="width:100%">
         <img src="/w3images/wedding.jpg" style="width:100%">
         <img src="/w3images/p6.jpg" style="width:100%">
@@ -227,6 +414,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <hr style="width:200px" class="w3-opacity">
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
 
@@ -238,11 +426,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>Let's get in touch. Send me a message:</p>
 
     <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone Number" name="Phone Number"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" name="Message"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Hi, start by telling me your Name?" name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your Personal or Company Email Address is Important?" name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone Number is Important?" name="Phone Number"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="What is the Subject of our discussion?" name="Subject"></p>
+      <p><textarea class="w3-input w3-padding-16" type="text" placeholder="Write me your Message?" name="Message"></textarea>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -254,12 +442,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <div class="c1_social_links">
+      <a href="https://github.com/hiWisdom" target="_blank"><i class="fa fa-github w3-hover-opacity c1_social_link_spacing" title="Github"></i></a>
+      <a href="https://www.facebook.com/akpotor.ovie.5" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity c1_social_link_spacing"></i></a>
+      <!-- <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href=""><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+      <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a> -->
+      <a href="https://www.linkedin.com/in/orodje-akpotor-089652173/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity c1_social_link_spacing"></i></a>
+    </div>
     <p class="w3-medium">Created by <a href="https://hiwisdom.github.io/online.github.io" target="_blank" class="w3-hover-text-green">Orodje</a> 1996 - <span class="date"></span></p>
   <!-- End footer -->
   </footer>
@@ -272,5 +462,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 <script src="main.js"></script>
+
 </body>
 </html>

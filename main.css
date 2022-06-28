@@ -1,4 +1,5 @@
 ﻿
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -7,7 +8,7 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100vh; /* Full height */
-    overflow: scroll; /* Enable scroll if needed */
+    overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: black; /* Black w/ opacity */
     padding-top: 60px;
@@ -26,7 +27,213 @@
 
   
 .modal-content {
-    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */ 
+    margin-top: default;
+    margin: 5px auto; /* 15% from the top and centered */
+    margin-left: 0%;
+  }
+
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+
+/* Slideshow container */
+.c1_project_one, .c1_project_two, .c1_project_three {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .c1_mySlideshow, .c1_mySlideshow_two, .c1_mySlideshow_three {
+    display: none;
+    cursor:grabbing;
+  }
+  
+  /* Next & previous buttons for project one */
+  .c1_slideshow_prev_btn, .c1_slideshow_next_btn {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -190px;
+    padding: 16px;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+    /* Next & previous buttons for project two */
+    .c1_slideshow_prev_btn_two, .c1_slideshow_next_btn_two {
+      cursor: pointer;
+      position: absolute;
+      width: auto;
+      margin-top: -190px;
+      padding: 16px;
+      color: goldenrod;
+      font-weight: bold;
+      font-size: 28px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Next & previous buttons for project three */
+    .c1_slideshow_prev_btn_three, .c1_slideshow_next_btn_three {
+      cursor: pointer;
+      position: absolute;
+      width: auto;
+      margin-top: -190px;
+      padding: 16px;
+      color: goldenrod;
+      font-weight: bold;
+      font-size: 28px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }    
+  
+  /* Position the "next button" to the right for project one*/
+  .c1_slideshow_next_btn {
+    margin-left: 11.2cm;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Position the "next button" to the right for project two */
+  .c1_slideshow_next_btn_two {
+    margin-left: 11.2cm;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Position the "next button" to the right for project three */
+  .c1_slideshow_next_btn_three {
+    margin-left: 11.2cm;
+    border-radius: 3px 0 0 3px;
+  }  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .c1_slideshow_prev_btn:hover, .c1_slideshow_next_btn:hover, .c1_slideshow_prev_btn_two:hover, .c1_slideshow_next_btn_two:hover, .c1_slideshow_prev_btn_three:hover, .c1_slideshow_next_btn_three:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .c1_slide_text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  
+  /* The dots/bullets/indicators */
+  .c1_slideshow_dot {
+    cursor: pointer;
+    height: 10px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .c1_slideshow_dot:hover {
+    background-color: goldenrod;
+    width: 38px;
+  }
+
+  /* Fading animation for project one*/
+  .c1_slideshow_fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+  /* The dots/bullets/indicators for project two*/
+  .c1_slideshow_dot_two {
+    cursor: pointer;
+    height: 10px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .c1_slideshow_dot_two:hover {
+    background-color: goldenrod;
+    width: 38px;
+  }
+  
+
+  /* The dots/bullets/indicators for project three*/
+  .c1_slideshow_dot_three {
+    cursor: pointer;
+    height: 10px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .c1_slideshow_dot_three:hover {
+    background-color: goldenrod;
+    width: 38px;
+  }
+  
+  
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: black; /* Black w/ opacity */
+    padding-top: 60px;
+    margin:0;
+  }
+
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  
+.modal-content {
     width: 100%; /* Could be more or less, depending on screen size */ 
     margin-top: default;
     margin: 5px auto; /* 15% from the top and centered */
@@ -202,6 +409,26 @@
     .second_text, .forth_text {
         text-decoration: underline !important;  
     }
+
+      /* Next & previous buttons */
+    .c1_slideshow_prev_btn, .c1_slideshow_next_btn {
+      cursor: pointer;
+      position: absolute;
+      width: auto;
+      margin-top: -4.9cm;
+      padding: 16px;
+      color: goldenrod;
+      font-weight: bold;
+      font-size: 30px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .c1_slideshow_next_btn {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
 }
 
 
@@ -231,7 +458,17 @@
 	}
 }
 
+.c1_social_links{
+  border: 1px solid transparent;
+}
 
+.c1_social_link_spacing {
+  padding:1%;
+}
+
+a .c1_social_link_spacing{
+  font-size: 40px;
+}
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
@@ -406,7 +643,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
 .w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
-.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
 .w3-grey,.w3-hover-grey:hover,.w3-gray,.w3-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
 .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
