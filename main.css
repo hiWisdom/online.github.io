@@ -425,7 +425,7 @@
       user-select: none;
     }
 
-    .c1_slideshow_next_btn {
+    .c1_slideshow_next_btn, .c1_slideshow_next_btn_two, .c1_slideshow_next_btn_three {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
