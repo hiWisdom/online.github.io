@@ -418,8 +418,10 @@
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: akpotororodje@mail.com</p>
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
-
-    <form action="contact.php" method="post" enctype="text/plain" target="_blank">
+<!-- 
+    <form action="contact.php" method="post" enctype="text/plain" target="_blank"> -->
+      
+    <form action="post" data-netlify="true" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Hi, start by telling me your Name?" name="name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Your Personal or Company Email Address is Important?" name="email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone Number is Important?" name="phone_number"></p>
