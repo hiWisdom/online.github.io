@@ -419,12 +419,12 @@
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Hi, start by telling me your Name?" name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your Personal or Company Email Address is Important?" name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone Number is Important?" name="Phone Number"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="What is the Subject of our discussion?" name="Subject"></p>
-      <p><textarea class="w3-input w3-padding-16" type="text" placeholder="Write me your Message?" name="Message"></textarea>
+    <form action="contact.php" method="post" enctype="text/plain" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Hi, start by telling me your Name?" name="name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your Personal or Company Email Address is Important?" name="email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone Number is Important?" name="phone_number"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="What is the Subject of our discussion?" name="subject"></p>
+      <p><textarea class="w3-input w3-padding-16" type="text" placeholder="Write me your Message?" name="message"></textarea>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
