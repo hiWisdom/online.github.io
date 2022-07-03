@@ -1,5 +1,17 @@
 
+//on window scroll
 
+var mediaNavBar =  document.querySelector("#myNavbar");
+window.addEventListener('scroll', function(e){
+	if(e.pageYOffset >= 5) {
+		mediaNavBar.style.backgroundColor = "white";
+	}
+
+	else {
+		mediaNavBar.style.backgroundColor = "gold";
+		mediaNavBar.style.color = "white";
+	}
+});
 
 
 //date
@@ -208,7 +220,7 @@ setInterval(writing_animation_one_Loaded, 12000);
 			}
 			slidesThree[slideIndexThree-1].style.display = "block";
 			dotsThree[slideIndexThree-1].className += " active";
-			} 
+			}
 
 			// c1_project_two slide component//
 
