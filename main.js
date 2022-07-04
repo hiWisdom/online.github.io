@@ -2,15 +2,16 @@
 //on window scroll
 
 var mediaNavBar =  document.querySelector("#myNavbar");
-window.addEventListener('scroll', function(e){
-	if(e.pageYOffset >= 5) {
-		mediaNavBar.style.backgroundColor = "white";
+var fontSizeAnimateOnScroll = document.querySelector(".c1_bar .w3-bar-item");
+window.addEventListener('scroll', (e) =>{
+	if(e.pageYOffset < 10) {
+		mediaNavBar.style.backgroundColor = "black";
+	}
+	else {
+		
+		mediaNavBar.style.backgroundColor = "red";
 	}
 
-	else {
-		mediaNavBar.style.backgroundColor = "gold";
-		mediaNavBar.style.color = "white";
-	}
 });
 
 
