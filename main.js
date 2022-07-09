@@ -4,14 +4,18 @@
 var mediaNavBar =  document.querySelector("#myNavbar");
 var fontSizeAnimateOnScroll = document.querySelector(".c1_bar .w3-bar-item");
 window.addEventListener('scroll', (e) =>{
-	if(e.pageYOffset < 10) {
+	if(e.pageYOffset >= 1) {
 		mediaNavBar.style.backgroundColor = "black";
 	}
 	else {
 		
-		mediaNavBar.style.backgroundColor = "red";
+		newFunction();
 	}
 
+
+	function newFunction() {
+		mediaNavBar.style.backgroundColor = "gold";
+	}
 });
 
 
@@ -121,6 +125,11 @@ setInterval(writing_animation_one_Loaded, 12000);
 			let slideIndex = 1;
 			showSlides(slideIndex);
 
+			
+
+			//call slideshow caption elements
+			var c1SlideshowText, c1SlideCaptionDecoration;
+
 			// Next/previous controls
 			function plusSlides(n) {
 			showSlides(slideIndex += n);
@@ -146,6 +155,11 @@ setInterval(writing_animation_one_Loaded, 12000);
 			}
 			slides[slideIndex-1].style.display = "block";
 			dots[slideIndex-1].className += " active";
+			// c1SlideshowText.style.border= "1px solid white";
+			// c1SlideshowText.style.backgroundColor= "gold";
+			// c1SlideshowText.style.transitionProperty= "all";
+			// c1SlideshowText.style.transitionDuration= "6s";
+			// c1SlideshowText.style.transitionTimingFunction= "cubic-bezier(0.075, 0.82, 0.165, 1)";
 			} 
 
 			// c1_project_one slide component//
