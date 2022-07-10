@@ -1,22 +1,23 @@
 
 //on window scroll
 
-var mediaNavBar =  document.querySelector("#myNavbar");
-var fontSizeAnimateOnScroll = document.querySelector(".c1_bar .w3-bar-item");
-window.addEventListener('scroll', (e) =>{
-	if(e.pageYOffset >= 1) {
-		mediaNavBar.style.backgroundColor = "black";
-	}
-	else {
-		
-		newFunction();
-	}
+ var mediaNavBar =  document.querySelector("#myNavbar");
+	window.addEventListener('scroll', function(){
 
+		mediaNavBar.classList.toggle('c1_top_style_scroll_one', window.scrollY > 100);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_ten', window.scrollY > 500);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_twenty', window.scrollY > 900);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_thirty', window.scrollY > 1300);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_forty', window.scrollY > 1700);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_fifty', window.scrollY > 2100);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_sixty', window.scrollY > 2500);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_seventy', window.scrollY > 2900);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_eighty', window.scrollY > 3300);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_ninety', window.scrollY > 3400);
+		mediaNavBar.classList.toggle('c1_top_style_scroll_onehundred', window.scrollY > 4100);
 
-	function newFunction() {
-		mediaNavBar.style.backgroundColor = "gold";
-	}
-});
+		console.log(mediaNavBar);
+	});
 
 
 //date
