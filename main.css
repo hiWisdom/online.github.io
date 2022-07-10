@@ -745,7 +745,9 @@ a .c1_social_link_spacing{
   height: 100% !important;
 }
 
-
+.c1_fig_image {
+  height: 1cm;
+}
 
 
 
@@ -1439,24 +1441,48 @@ img{vertical-align:middle}a{color:inherit}
   .w3-dropdown-click.w3-mobile{
     text-align:center;
   }
+
+
   
   .c1_slideshow_text {
-    border: 1px solid white;
-    background: gold;
-    opacity: 1;
-    height: 1.5cm;
+    border: 5px solid transparent;
+    border-bottom: none;
+    background-color: rgba(0,0,0,0.12);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.12);
+    opacity:1;
+    height: 1.1cm;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-indent:center;
-    width:50%;
+    width:100%;
     position: absolute;
-    margin-top: -4.235cm;
-    margin-left: 25%;
-    margin-right: auto;
+    margin-top: -7.9cm;
+    margin-left: -0.1%;
     transition-delay: 0s;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 6s;
+    animation-name: slideshowtext;
+    animation-duration: 6.5s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-play-state: running;
+    animation-direction: alternate-reverse;
+    font-size: larger !important;
+  }
+
+  @keyframes slideshowtext {
+    from {
+      opacity: .4;
+      margin-top: -7.9cm;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: -3.3cm;
+    }
   }
   
   .c1_slideshow_text:hover {
@@ -1476,7 +1502,8 @@ img{vertical-align:middle}a{color:inherit}
   
   .c1_slideshow_text .c1_slide_caption_decoration {
     color: white;
-    border: 1px solid white;
+    border: 2px solid rgba(0,0,0,0.4);
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5),  rgba(0,0,0,0.8));
     font-size:larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
@@ -1484,14 +1511,26 @@ img{vertical-align:middle}a{color:inherit}
     font-variant-caps: titling-caps;
     font-kerning: initial;
     font-synthesis: inherit; 
-    position: absolute;
-    margin-top: 0%;
-    margin-left: 0%;
+    position: relative;
+    margin-top: -0.5%;
     margin-right: auto;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 6s;
     width: 100% !important;
+    animation-name: slideshowinnertext;
+    animation-duration: 6.5s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-play-state: running;
+    animation-direction: alternate-reverse;
+    font-size: larger !important;
+  }
+
+  @keyframes slideshowinnertext {
+
   }
   
   

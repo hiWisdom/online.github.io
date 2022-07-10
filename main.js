@@ -40,22 +40,41 @@ const writing_animation_three = document.querySelector(".forth_text");
 
 const writing_animation_one_Loaded = ()=> {
 		
+	writing_animation_one.style.transitionProperty="all";
+	writing_animation_one.style.transitionDuration="3.5s";
+	writing_animation_one.style.transitionTimingFunction="cubic-bezier(75, 0.82, 0.165, 1)";
+	
 
     //Je suis
     setTimeout( ()=> {
         writing_animation_one.textContent = "I'm";
+		writing_animation_one.style.color="gold"; 
+		writing_animation_one.style.fontWeight="bolder";
+		writing_animation_one.style.boxShadow="5px 2px 5px 2px yellow";
+		writing_animation_one.style.backgroundColor="black"; 
     },0 );
 
     setTimeout( ()=> {
         writing_animation_one.textContent = "Je suis";
+		writing_animation_one.style.color="indigo";
+		writing_animation_one.style.boxShadow="5px 2px 5px 2px gold";  
+		writing_animation_one.style.backgroundColor="grey"; 
     },4000 );
 
     setTimeout( ()=> {
         writing_animation_one.textContent = "Ich bin";
+		writing_animation_one.style.color="#513"; 
+		writing_animation_one.style.boxShadow="5px 2px 5px 2px indigo"; 
+		writing_animation_one.style.backgroundColor="black"; 
     },8000 );
 
 }
-    
+   
+
+
+
+
+
     
 writing_animation_one_Loaded();
 
@@ -119,7 +138,22 @@ setInterval(writing_animation_one_Loaded, 12000);
 // c1_project slideshow component//
 
 
-	
+			
+var aniContainterText = document.querySelector(".c1_slideshow_text");
+var aniContainterTextParagraph = document.querySelector(".c1_slide_caption_decoration");
+
+window.addEventListener("load", function(){
+// aniContainterText.style.backgroundColor="black";
+// aniContainterTextParagraph.style.color="red";
+// aniContainterText.style.transitionDelay= "0s";
+// aniContainterText.style.transitionProperty= "all";
+// aniContainterText.style.transitionTimingFunction= "cubic-bezier(0.075, 0.82, 0.165, 1)";
+// aniContainterText.style.transitionDuration= "6s";
+// aniContainterTextParagraph.style.transitionDelay= "0s";
+// aniContainterTextParagraph.style.transitionProperty= "all";
+// aniContainterTextParagraph.style.transitionTimingFunction= "cubic-bezier(0.075, 0.82, 0.165, 1)";
+// aniContainterTextParagraph.style.transitionDuration= "6s";
+});
 
 			// c1_project_one slide component//
 
@@ -133,7 +167,7 @@ setInterval(writing_animation_one_Loaded, 12000);
 
 			// Next/previous controls
 			function plusSlides(n) {
-			showSlides(slideIndex += n);
+			showSlides(slideIndex += n);			
 			}
 			
 			// Thumbnail image controls
