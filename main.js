@@ -1,74 +1,76 @@
 
-//on window scroll
+//on window scroll change header background color
+	var mediaNavBar =  document.querySelector("#myNavbar");
+		window.addEventListener('scroll', function(){
 
- var mediaNavBar =  document.querySelector("#myNavbar");
-	window.addEventListener('scroll', function(){
+			mediaNavBar.classList.toggle('c1_top_style_scroll_one', window.scrollY > 100);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_ten', window.scrollY > 500);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_twenty', window.scrollY > 900);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_thirty', window.scrollY > 1300);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_forty', window.scrollY > 1700);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_fifty', window.scrollY > 2100);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_sixty', window.scrollY > 2500);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_seventy', window.scrollY > 2900);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_eighty', window.scrollY > 3300);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_ninety', window.scrollY > 3400);
+			mediaNavBar.classList.toggle('c1_top_style_scroll_onehundred', window.scrollY > 4100);
 
-		mediaNavBar.classList.toggle('c1_top_style_scroll_one', window.scrollY > 100);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_ten', window.scrollY > 500);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_twenty', window.scrollY > 900);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_thirty', window.scrollY > 1300);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_forty', window.scrollY > 1700);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_fifty', window.scrollY > 2100);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_sixty', window.scrollY > 2500);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_seventy', window.scrollY > 2900);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_eighty', window.scrollY > 3300);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_ninety', window.scrollY > 3400);
-		mediaNavBar.classList.toggle('c1_top_style_scroll_onehundred', window.scrollY > 4100);
-
-		console.log(mediaNavBar);
-	});
+			console.log(mediaNavBar);
+		});
+//on window scroll change header background color
 
 
-//date
 
-const updateYear = document.querySelector(".date");
-updateYear.style.color = "grey";
-const newDate = new Date();
-const newYearDate = newDate.getFullYear();
-updateYear.innerHTML = newYearDate;
+
+//update year date
+			const updateYear = document.querySelector(".date");
+			updateYear.style.color = "grey";
+			const newDate = new Date();
+			const newYearDate = newDate.getFullYear();
+			updateYear.innerHTML = newYearDate;
+//update year date
 
 
 
 
 //text animation code
+		const writing_animation_two = document.querySelector(".second_text");
+		const writing_animation_one = document.querySelector(".third_text");
+		const writing_animation_three = document.querySelector(".forth_text");
 
-const writing_animation_two = document.querySelector(".second_text");
-const writing_animation_one = document.querySelector(".third_text");
-const writing_animation_three = document.querySelector(".forth_text");
 
+		const writing_animation_one_Loaded = ()=> {
+				
+			writing_animation_one.style.transitionProperty="all";
+			writing_animation_one.style.transitionDuration="3.5s";
+			writing_animation_one.style.transitionTimingFunction="cubic-bezier(75, 0.82, 0.165, 1)";
+			
 
-const writing_animation_one_Loaded = ()=> {
-		
-	writing_animation_one.style.transitionProperty="all";
-	writing_animation_one.style.transitionDuration="3.5s";
-	writing_animation_one.style.transitionTimingFunction="cubic-bezier(75, 0.82, 0.165, 1)";
-	
+			//Je suis
+			setTimeout( ()=> {
+				writing_animation_one.textContent = "I'm";
+				writing_animation_one.style.color="gold"; 
+				writing_animation_one.style.fontWeight="bolder";
+				writing_animation_one.style.boxShadow="5px 2px 5px 2px yellow";
+				writing_animation_one.style.backgroundColor="black"; 
+			},0 );
 
-    //Je suis
-    setTimeout( ()=> {
-        writing_animation_one.textContent = "I'm";
-		writing_animation_one.style.color="gold"; 
-		writing_animation_one.style.fontWeight="bolder";
-		writing_animation_one.style.boxShadow="5px 2px 5px 2px yellow";
-		writing_animation_one.style.backgroundColor="black"; 
-    },0 );
+			setTimeout( ()=> {
+				writing_animation_one.textContent = "Je suis";
+				writing_animation_one.style.color="indigo";
+				writing_animation_one.style.boxShadow="5px 2px 5px 2px gold";  
+				writing_animation_one.style.backgroundColor="grey"; 
+			},4000 );
 
-    setTimeout( ()=> {
-        writing_animation_one.textContent = "Je suis";
-		writing_animation_one.style.color="indigo";
-		writing_animation_one.style.boxShadow="5px 2px 5px 2px gold";  
-		writing_animation_one.style.backgroundColor="grey"; 
-    },4000 );
+			setTimeout( ()=> {
+				writing_animation_one.textContent = "Ich bin";
+				writing_animation_one.style.color="#513"; 
+				writing_animation_one.style.boxShadow="5px 2px 5px 2px indigo"; 
+				writing_animation_one.style.backgroundColor="black"; 
+			},8000 );
 
-    setTimeout( ()=> {
-        writing_animation_one.textContent = "Ich bin";
-		writing_animation_one.style.color="#513"; 
-		writing_animation_one.style.boxShadow="5px 2px 5px 2px indigo"; 
-		writing_animation_one.style.backgroundColor="black"; 
-    },8000 );
+		}
 
-}
    
 
 
@@ -76,59 +78,89 @@ const writing_animation_one_Loaded = ()=> {
 
 
     
-writing_animation_one_Loaded();
+			writing_animation_one_Loaded();
 
-setInterval(writing_animation_one_Loaded, 12000);
-
-
-
-
-	const writing_animation_two_Loaded = ()=> {
-		
-		setTimeout( ()=> {
-			writing_animation_two.textContent = "Code, Create and Develope";
-		},0 );
-	
-		setTimeout( ()=> {
-			writing_animation_two.textContent = "Code, Creer, Developper";
-		},4000 );
-	
-		setTimeout( ()=> {
-			writing_animation_two.textContent = "Code, Schaffen, Entwickeln";
-		},8000 );
-	
-	}
-		
-		
-	writing_animation_two_Loaded();
-	
-	setInterval(writing_animation_two_Loaded, 12000);
+			setInterval(writing_animation_one_Loaded, 12000);
 
 
 
 
+				const writing_animation_two_Loaded = ()=> {
+					
+					setTimeout( ()=> {
+						writing_animation_two.textContent = "Code, Create and Develope";
+					},0 );
+				
+					setTimeout( ()=> {
+						writing_animation_two.textContent = "Code, Creer, Developper";
+					},4000 );
+				
+					setTimeout( ()=> {
+						writing_animation_two.textContent = "Code, Schaffen, Entwickeln";
+					},8000 );
+				
+				}
+					
+					
+				writing_animation_two_Loaded();
+				
+				setInterval(writing_animation_two_Loaded, 12000);
 
-	
-	const writing_animation_three_Loaded = ()=> {
-		
-		setTimeout( ()=> {
-			writing_animation_three.textContent = "Solutions";
-		},0 );
-	
-		setTimeout( ()=> {
-			writing_animation_three.textContent = "Designs";
-		},4000 );
-	
-		setTimeout( ()=> {
-			writing_animation_three.textContent = "Experience";
-		},8000 );
-	
-	}
-		
-		
-	writing_animation_three_Loaded();
-	
-	setInterval(writing_animation_three_Loaded, 12000);
+
+
+
+
+				
+				const writing_animation_three_Loaded = ()=> {
+					
+					setTimeout( ()=> {
+						writing_animation_three.textContent = "Solutions";
+					},0 );
+				
+					setTimeout( ()=> {
+						writing_animation_three.textContent = "Designs";
+					},4000 );
+				
+					setTimeout( ()=> {
+						writing_animation_three.textContent = "Experience";
+					},8000 );
+				
+				}
+					
+					
+				writing_animation_three_Loaded();
+				
+				setInterval(writing_animation_three_Loaded, 12000);
+//text animation code
+
+
+
+
+
+
+
+
+
+
+
+
+
+///First halft, Second Halft script begins///
+
+//TAKE A BREAK///
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

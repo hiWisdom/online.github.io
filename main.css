@@ -690,7 +690,7 @@ a .c1_social_link_spacing{
 }
 
 .c1_slideshow_text:hover {
-  border: 1.67px groove transparent;
+  /* border: 1.67px groove transparent;
   border-bottom: none;
   background: transparent;
   height: 1.2cm;
@@ -701,7 +701,7 @@ a .c1_social_link_spacing{
   position: absolute;
   margin-top: -4.8cm;
   margin-left: 2.5%;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .c1_slideshow_text .c1_slide_caption_decoration {
@@ -726,7 +726,7 @@ a .c1_social_link_spacing{
 
 
 .c1_slideshow_text .c1_slide_caption_decoration:hover {
-  color: white;
+  /* color: white;
   background: gold;
   border: 2px dashed gold;
   border-right:none;
@@ -742,14 +742,55 @@ a .c1_social_link_spacing{
   margin-left: 0%;
   margin-right: auto;
   width: 100% !important;
-  height: 100% !important;
+  height: 100% !important; */
 }
 
 .c1_fig_image {
   height: 1cm;
 }
 
+.c1_footer_figimage {
+  height: 1cm;
+  border: 1px solid rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 2px 5px rgba(0,0,0,0.5);
+  width:1.1cm;
+  border-radius: 50%;
+  margin-left:0.99%;
+  margin-right: auto;
+  position: relative;
+  transition-duration: 3s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
+/* .c1_footer_figimage:hover {
+  cursor: crosshair;
+  border: 1px solid #ddffdd;
+  box-shadow: 2px 2px 2px 5px rgba(0,0,0,0.5);
+  position: absolute;
+  margin-left:0.99%;
+  margin-right: auto;
+  transition-duration: 3s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-name: footerFigImageAnimation;
+  animation-duration: 2.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes footerFigImageAnimation{
+
+  from {
+    margin-top: auto;
+  }
+
+  to {
+    
+    margin-top: -5cm;
+  }
+
+} */
 
 
 
@@ -1467,7 +1508,7 @@ img{vertical-align:middle}a{color:inherit}
     animation-delay: 1s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: both;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
     animation-play-state: running;
     animation-direction: alternate-reverse;
     font-size: larger !important;
@@ -1475,7 +1516,7 @@ img{vertical-align:middle}a{color:inherit}
 
   @keyframes slideshowtext {
     from {
-      opacity: .4;
+      opacity: .3;
       margin-top: -7.9cm;
     }
 
@@ -1486,7 +1527,7 @@ img{vertical-align:middle}a{color:inherit}
   }
   
   .c1_slideshow_text:hover {
-    border: 1.67px groove transparent;
+    /* border: 1.67px groove transparent;
     border-bottom: none;
     background: transparent;
     height: 1.2cm;
@@ -1497,7 +1538,7 @@ img{vertical-align:middle}a{color:inherit}
     position: absolute;
     margin-top: -5.235cm;
     margin-left: 22%;
-    margin-right: auto;
+    margin-right: auto; */
   }
   
   .c1_slideshow_text .c1_slide_caption_decoration {
@@ -1512,7 +1553,6 @@ img{vertical-align:middle}a{color:inherit}
     font-kerning: initial;
     font-synthesis: inherit; 
     position: relative;
-    margin-top: -0.5%;
     margin-right: auto;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -1531,11 +1571,33 @@ img{vertical-align:middle}a{color:inherit}
 
   @keyframes slideshowinnertext {
 
+    0%{
+
+        color: red
+    }
+    25%{
+      color: yellow
+      }
+
+    55%{
+      color: greenyellow
+    }
+    85%{
+      color: goldenrod
+    }
+
+  105%{
+    color: black
+  }
+  0%{
+    color: white
+}
+
   }
   
   
   .c1_slideshow_text .c1_slide_caption_decoration:hover {
-    color: white;
+    /* color: white;
     background: gold;
     border: 2px dashed gold;
     border-right:none;
@@ -1551,7 +1613,7 @@ img{vertical-align:middle}a{color:inherit}
     margin-left: 0%;
     margin-right: auto;
     width: 100% !important;
-    height: 100% !important;
+    height: 100% !important; */
   }
   
   
