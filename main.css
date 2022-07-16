@@ -1418,16 +1418,33 @@ img{vertical-align:middle}a{color:inherit}
     margin-top: -4.9cm;
     padding: 16px;
     color: goldenrod;
+    background-color: #9c27b0;
     font-weight: bold;
     font-size: 30px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    
   }
 
   .c1_slideshow_next_btn, .c1_slideshow_next_btn_two, .c1_slideshow_next_btn_three {
     right: 0;
     border-radius: 3px 0 0 3px;
+  }
+
+  .c1_slideshow_btn {
+    background-color: #673ab7 !important;
+    border-radius: 50% !important;
+    margin-top: -4.4cm !important;
+    margin-left: -0.5cm !important;
+  }
+
+  .c1_slideshow_btn:hover {
+    transition: all 5s ease-in-out cubic-bezier(0.175, 1.82, 1.165, 1);
+    background-color: red !important;
+    border-radius: 50% !important;
+    margin-top: -4.4cm !important;
+    margin-left: -0.5cm !important;
   }
 
   .c1_abt {
@@ -1474,7 +1491,7 @@ img{vertical-align:middle}a{color:inherit}
     border-right: none;
     border-top: none;
     color: white;
-    margin-bottom:11%;
+    margin-bottom:19.5%;
   }
 
   .w3-bar-item.w3-mobile,
@@ -1516,7 +1533,7 @@ img{vertical-align:middle}a{color:inherit}
 
   @keyframes slideshowtext {
     from {
-      opacity: .3;
+      opacity: 1;
       margin-top: -7.9cm;
     }
 
@@ -1542,18 +1559,22 @@ img{vertical-align:middle}a{color:inherit}
   }
   
   .c1_slideshow_text .c1_slide_caption_decoration {
-    color: white;
-    border: 2px solid rgba(0,0,0,0.4);
-    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5),  rgba(0,0,0,0.8));
+    color: black;
+    border: 2px solid white;
+    border-left:none;
+    border-right:none;
+    border-bottom:2px dashed white;
+    background:white;
     font-size:larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    font-style: oblique;
+    font-style:normal;
     font-variant-caps: titling-caps;
     font-kerning: initial;
     font-synthesis: inherit; 
     position: relative;
-    margin-right: auto;
+    margin-top: 0.7cm;
+    margin-left: -0.7cm;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 6s;
@@ -1587,10 +1608,10 @@ img{vertical-align:middle}a{color:inherit}
     }
 
   105%{
-    color: black
+    color: green
   }
   0%{
-    color: white
+    color: black
 }
 
   }
