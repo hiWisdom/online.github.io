@@ -415,6 +415,10 @@ a .c1_social_link_spacing{
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  transition-property: all;
+  transition-delay: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
 }
 
 
@@ -798,6 +802,9 @@ a .c1_social_link_spacing{
 
 
 
+.c1_body {
+  background:linear-gradient(black, black, #795548,#757575, #616161, #3a3a3a, black) !important;
+}
 
 
 
@@ -978,10 +985,16 @@ a .c1_social_link_spacing{
 
 
 
-
-
+/* W3SCHOOLS FRAME WORK */
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+
+
+
+
+
+
+
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -1210,6 +1223,20 @@ img{vertical-align:middle}a{color:inherit}
 
 
 
+
+/* W3SCHOOLS FRAME WORK */
+
+
+
+
+
+
+
+
+
+
+
+
 /*media queries*/
 
 /*
@@ -1433,15 +1460,17 @@ img{vertical-align:middle}a{color:inherit}
   }
 
   .c1_slideshow_btn {
-    background-color: #673ab7 !important;
+    background-color: rgba(119, 203, 202, 0.7) !important;
     border-radius: 50% !important;
     margin-top: -4.4cm !important;
     margin-left: -0.5cm !important;
+    width:0.5cm;
+    height: 1.5cm;
   }
 
   .c1_slideshow_btn:hover {
     transition: all 5s ease-in-out cubic-bezier(0.175, 1.82, 1.165, 1);
-    background-color: red !important;
+    background-color:  rgba(119, 172, 202, 1) !important;
     border-radius: 50% !important;
     margin-top: -4.4cm !important;
     margin-left: -0.5cm !important;
@@ -1576,47 +1605,76 @@ img{vertical-align:middle}a{color:inherit}
     margin-top: 0.7cm;
     margin-left: -0.7cm;
     transition-property: all;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition-duration: 6s;
     width: 100% !important;
     animation-name: slideshowinnertext;
     animation-duration: 6.5s;
-    animation-delay: 1s;
+    animation-delay: 2.5s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-fill-mode: both;
-    animation-iteration-count: 2;
-    animation-play-state: running;
-    animation-direction: alternate-reverse;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
     font-size: larger !important;
   }
 
   @keyframes slideshowinnertext {
 
     0%{
-
-        color: red
+      color: black;
+      background-color: white;
     }
-    25%{
-      color: yellow
+    15%{
+      color: red;
+      background-color: yellow;
       }
 
-    55%{
-      color: greenyellow
+    50%{
+      color: yellow;
+      background-color: red;
     }
-    85%{
-      color: goldenrod
+    75%{
+      color: green;
+      background-color: white;
     }
 
-  105%{
-    color: green
+  100%{
+    color: black;
+    background-color: green;
   }
-  0%{
-    color: black
-}
+ 
 
   }
   
-  
+  /* .c1_slide_caption_decoration {
+    animation-name: slideCaption;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  @keyframes slideCaption {
+    0%{
+      background-color: white;
+    }
+    15%{
+      background-color: yellow;
+      margin-left:-25% !important;
+      }
+
+    50%{
+      background-color: red;
+      text-align: right;
+    }
+    75%{
+      background-color: white;
+    }
+
+  100%{
+    background-color: green;
+  }
+    
+  } */
+
+
+
   .c1_slideshow_text .c1_slide_caption_decoration:hover {
     /* color: white;
     background: gold;
