@@ -803,8 +803,12 @@ a .c1_social_link_spacing{
 
 
 .c1_body {
-  background:linear-gradient(black, black, #795548,#757575, #616161, #3a3a3a, black) !important;
+  background:linear-gradient( black 15%, #795548 18.7%,#757575 3.5%, #616161 2%, #3a3a3a 2%, black 50%) !important;
 }
+
+
+
+
 
 
 
