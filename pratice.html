@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+
+<head>
+
+<style>
+
+* {
+	background: black;
+	color: white;
+	font-size: medium;
+}
+
+
+body {
+	height: 100vh;
+	width: 100%;
+	border: 2px solid white;
+	overflow:hidden;
+}
+
+header {
+	text-align:center;
+	border: 12px solid purple;
+	height:10vh;
+	transition: all 2s ease-in-out;
+}
+
+header:hover {
+	text-align:center;
+	border: 12px dashed #55627f;
+	height:9vh;
+	transition: all 2s ease-in;
+}
+
+.website_title {
+	float:left;
+	border: 4.9px solid gold;
+	transition: all 2s ease-in-out;
+}
+
+.website_title:hover {
+	float:left;
+	border: 5.9px dotted red;
+	transition: all 2s ease-in-out;
+	margin-left:2cm;
+	cursor: crosshair;
+}
+
+
+main {
+	text-align:center;
+	border: 12px solid purple;
+	height:50vh;
+	transition: all 2s ease-in-out;
+	margin-top: 2.5vh;
+	margin-bottom: 2vh;
+}
+
+main:hover {
+	text-align:center;
+	border: 12px dashed #55627f;
+	height:49vh;
+	transition: all 2s ease-in;
+}
+
+.main_title {
+	text-align:center;
+	font-size: large;
+}
+
+.values {
+	width:18px;
+}
+
+footer {
+	text-align:center;
+	border: 12px groove white;
+	height:20vh;
+	transition: all 2s ease-in-out;
+}
+
+footer:hover {
+	text-align:center;
+	border: 12px groove #55627f;
+	height:19vh;
+	transition: all 2s ease-in;
+}
+</style>
+
+</head>
+
+<body id="body">
+<div id="error_message_demo"></div>
+<header>
+<h1 class="website_title">Pratice.COM</h1>
+
+
+<div>
+<button onclick="change_dark_mode()" id="change_dark_mode" class="change_dark_mode">Dark Mode</button>
+<button onclick="change_light_mode()" id="change_light_mode" class="change_light_mode">Light Mode</button>
+</div>
+
+</header>
+
+<main>
+
+<div>
+
+<h1 id="main_title" class="main_title"></h1>
+
+<input type="text" id="main_title_edit" class="main_title_edit"/>
+
+<button onclick="main_title_edit()" id="main_title_edit_button" class="main_title_edit_button">Submit New Title</button>
+
+<br>
+
+<button onclick="change_title_uppercase()" id="change_title_uppercase" class="change_title_uppercase">Change Title To Upper Case</button>
+
+<button onclick="change_title_lowercase()" id="change_title_lowercase" class="change_title_lowercase">Change Title To Lower Case</button>
+
+</div>
+
+<br>
+
+<div>
+
+Test Numbers
+
+<input type="text" id="first_Value" max="3" class="values"/> +
+<input type="text" id="second_Value" max="3" class="values"/> = <span id="values_result"></span>
+
+<br>
+<button id="submit_values_result">Add</button>
+</div>
+
+</main>
+
+<footer>
+
+&copy <p id="date"><span id="DY"></span> <span class="website_title">Pratice.COM</span></p>
+</footer>
+
+
+<script>
+
+try {
+
+
+
+
+
+
+
+//DOM Manupulations
+document.getElementById("main_title").innerHTML = "Pratice Here";
+
+var webBody = document.querySelector("body");
+var webHeader = document.querySelector("header");
+var webMain = document.querySelector("main");
+var webFooter = document.querySelector("footer");
+var textValue = document.getElementById("main_title_edit").value;
+var postTextvalue = document.getElementById("main_title");
+var svr = document.getElementById("submit_values_result");
+var firstValue = document.getElementById("first_Value").value;
+var secondValue = document.getElementById("second_Value").value;
+
+
+
+
+svr.addEventListener("click", function(){
+
+const addFristVndSecondV = firstValue + secondValue;
+
+var resultValue = document.getElementById("values_result").innerHTML = Number(addFristVndSecondV);
+
+
+
+
+});
+
+
+function main_title_edit() {
+textValue = document.getElementById("main_title_edit").value;
+postTextvalue = document.getElementById("main_title");
+postTextvalue.innerHTML = textValue;
+console.log(textValue);
+console.count(textValue);
+
+}
+
+function change_title_uppercase() {
+postTextvalue.innerHTML = textValue.toUpperCase();
+}
+
+
+function change_title_lowercase() {
+postTextvalue.innerHTML = textValue.toLowerCase();
+}
+
+function change_dark_mode() {
+	webBody.style.backgroundColor = "black";
+	webHeader.style.backgroundColor = "black";
+	webMain.style.backgroundColor = "black";
+	webFooter.style.backgroundColor = "black";
+	
+}
+
+function change_light_mode() {
+	webBody.style.backgroundColor = "white";
+	webHeader.style.backgroundColor = "white";
+	webMain.style.backgroundColor = "white";
+	webFooter.style.backgroundColor = "white";
+}
+
+
+//automated date
+var dateObject = new Date();
+let updateDateOnly = dateObject.getDate();
+let updateMonthOnly = dateObject.getMonth();
+let updateYearOnly = dateObject.getFullYear();
+var output = document.querySelector("#DY");
+output.innerHTML = updateDateOnly + "-" + updateMonthOnly + "-" + updateYearOnly;
+
+}
+
+
+catch(err) {
+document.getElementById("error_message_demo").innerHTML = err.name + "<br>" + err.message;
+}
+</script>
+</body>
+
+
+
+</html>
