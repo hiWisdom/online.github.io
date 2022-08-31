@@ -808,16 +808,116 @@ a .c1_social_link_spacing{
 
 
 
+.personal_modal {
+  height: 100vh;
+  width:80%;
+  background: black;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  position: relative;
+}
 
 
 
+.close_deco {
+  color: white;
+  font-size: 100px;
+  font-weight: 20px;
+  cursor: pointer;
+  margin-left: 140vh;
+}
 
 
+@media(max-width: 450px) {
+  .close_deco {
+    margin-left: 10vh;
+  }
+}
+
+@media(max-width: 550px) {
+  .close_deco {
+    margin-left: 50vh;
+  }
+}
+
+@media(max-width: 750px) {
+  .close_deco {
+    margin-left: 100vh;
+  }
+}
+
+@media(max-width:1150px) {
+  .close_deco {
+    margin-left: 0vh;
+  }
+}
+
+@media(max-width: 1450px) {
+  .close_deco {
+    margin-left: 0vh;
+  }
+}
 
 
+.comment_construct {
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
 
+.personal_modal_play_game_button {
+  border: 2px solid white;
+  border-left: none;
+  border-right: none;
+  height: 10vh;
+  line-height: 5vh;
+  text-align:center;
+  cursor: crosshair;
+}
 
+.play_game_button {
+  border-radius: 20%;
+  height: 10vh;
+  line-height: 5vh;
+  text-align: center;
+  cursor: pointer;
+}
 
+.close_game_button {
+  border-radius: 20%;
+  height: 10vh;
+  line-height: 5vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+.play_game_button_deco, .play_game_button_word, .close_game_button, .close_game_button_word {
+  color: red;
+  animation-name: changeColor;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  20% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
 
 
 
