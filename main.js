@@ -1,8 +1,3 @@
-//call the dom web page body
-var webPageBody = document.querySelector(".c1_body");
-
-webPageBody.style.display="none";
-
 
 //on window scroll change header background color
 	var mediaNavBar =  document.querySelector("#myNavbar");
@@ -26,29 +21,13 @@ webPageBody.style.display="none";
 
 
 
-//create date object
 
-			//variables
+//update year date
 			const updateYear = document.querySelector(".date");
-			const modaldate = document.querySelector(".newyear");
-
-
 			updateYear.style.color = "grey";
 			const newDate = new Date();
 			const newYearDate = newDate.getFullYear();
-			
-
-//create date object
-
-
-			
-//update year date		
-
-			modaldate.innerHTML = newYearDate;
 			updateYear.innerHTML = newYearDate;
-
-
-
 //update year date
 
 
@@ -342,7 +321,7 @@ window.addEventListener("load", function(){
 
 
 
-				var c1_projectOne, c1_projectTwo, c1_projectThree;
+				var c1_body, c1_projectOne, c1_projectTwo, c1_projectThree;
 
 				c1_projectOne = document.querySelector("#c1_project_one");
 				c1_projectTwo = document.querySelector("#c1_project_two");
@@ -383,105 +362,5 @@ window.addEventListener("load", function(){
 
 
 
-
-//modal function
-
-
-var closeModalButton = document.querySelector(".close_deco");
-
-
-
-//modal date
-
-
-//create variables
-var modalContentOne = document.querySelector(".personal_modal_content");
-var iframeVideoGame = document.querySelector(".iframe_video_game");
-
-//style modalContentOne
-modalContentOne.style.fontSize="25px";
-modalContentOne.style.fontWeight="140px";
-modalContentOne.style.transitionDuration="2s";
-modalContentOne.style.transitionProperty="all";
-modalContentOne.style.transitionTimingFunction="ease-in-out";
-
-
-
-//iframe video game display
-iframeVideoGame.style.display="none";
-
-
-//create function for modal content display
-function modalContentDisplayOne(){
-	modalContentOne.style.display="none";
-}
-
-function modalContentDisplayTwo(){
-	modalContentOne.style.display="block";
-}
-
-window.setTimeout(modalContentDisplayOne, 2990);
-
- window.setTimeout(modalContentDisplayTwo, 3990);
-
-
-
- function closeModal(){
-	closeModalButton.addEventListener("click", ()=>{
-		document.querySelector(".personal_modal").style.display="none";
-	
-			webPageBody.style.display="block";
-		
-	});
-	}
-	closeModal();
-	
-	
-	function automaticOpenModal(){
-		document.querySelector(".personal_modal").style.display="block";
-		webPageBody.style.display="none";
-		var countTimeOut = window.setTimeout(automaticOpenModal, 5000);
-		console.log(countTimeOut);
-	}
-	
-	window.addEventListener("load", automaticOpenModal);
-	console.log(automaticOpenModal);
-	
-
-
-
-//onclick button for personal modal game mode
-var playGameButton = document.querySelector(".play_game_button");
-var closeGameButton = document.querySelector(".close_game_button");
-
-//hide close game button
-closeGameButton.style.display="none";
-closeGameButton.style.backgroundColor="red";
-closeGameButton.style.color="white";
-closeGameButton.style.marginLeft="400px";
-
-playGameButton.addEventListener("click", ()=>{
-	alert("Game Button is Working Perfectly Well and Tested Okay Working");
-
-	modalContentOne.style.display="none";
-	iframeVideoGame.style.display="block";
-	closeGameButton.style.display="block";
-	playGameButton.style.display="none";
-
-	console.log("Game Button is Working Perfectly Well and Tested Okay Working");
-});
-
-
-closeGameButton.addEventListener("click", ()=>{
-	alert("Close Game Button is Working Perfectly Well and Tested Okay Working");
-
-	modalContentOne.style.display="block";
-	iframeVideoGame.style.display="none";
-	closeGameButton.style.display="none";
-	playGameButton.style.display="block";
-	playGameButton.style.marginLeft="400px";
-
-	console.log("Close Game Button is Working Perfectly Well and Tested Okay Working");
-});
 
 
