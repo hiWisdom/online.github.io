@@ -500,7 +500,7 @@
       <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a> -->
       <a href="https://www.linkedin.com/in/orodje-akpotor-089652173/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity c1_social_link_spacing"></i></a>
     </div>
-    <p class="w3-medium" >Created by <a href="https://hiwisdom.github.io/online.github.io" target="_blank" class="w3-hover-text-green">Orodje<img src="pictures/20220522_165535.jpg" class="c1_footer_figimage"/></a> <!---1996 - ---><span class="date"></span></p>
+    <p class="w3-medium" >Created by <a href="https://hiwisdom.github.io/online.github.io" target="_blank" class="w3-hover-text-green">Orodje<img src="pictures/20220522_165535.jpg" class="c1_footer_figimage"/></a> <!---1996 - ---><span class="date"></span>  &nbsp<span id="visitCount">0</span><span id="visitString"> Visits</span></p>
   <!-- End footer -->
   </footer>
 
@@ -508,6 +508,18 @@
 </div>  
 <!-- END PAGE CONTENT -->
 
+
+<script>
+  var countLiveVisit = document.querySelector("#visitCount");
+  updateLiveVisit();
+  function updateLiveVisit(){
+    fetch('https://api.countapi.xyz/update/florin-pop/youtube/?amount=1')
+          .then(res => res.json())
+          .then(res =>{
+            countLiveVisit.innerHTML = res.value;
+          })
+  }
+</script>
 
 
 
