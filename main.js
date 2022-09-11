@@ -70,13 +70,6 @@
 			},8000 );
 
 		}
-
-   
-
-
-
-
-
     
 			writing_animation_one_Loaded();
 
@@ -137,13 +130,86 @@
 
 
 
+//media query into text animation
+
+	const media_query_writing_animation_one = document.querySelector(".media_query_intro_name");
+	const media_query_writing_animation_two = document.querySelector(".media_query_intro_whatido");
+	const media_query_writing_animation_three = document.querySelector(".media_query_intro_outcome");
+
+
+
+
+	
+	const media_query_writing_animation_one_Loaded = ()=> {
+					
+		setTimeout( ()=> {
+			media_query_writing_animation_one.textContent = "I'm";
+		},0 );
+	
+		setTimeout( ()=> {
+			media_query_writing_animation_one.textContent = "Je suis";
+		},4000 );
+	
+		setTimeout( ()=> {
+			media_query_writing_animation_one.textContent = "Ich bin";
+		},8000 );
+	
+	}
+		
+		
+	media_query_writing_animation_one_Loaded();
+	
+	setInterval(media_query_writing_animation_one_Loaded, 12000);
+
+
+
+
+	const media_query_writing_animation_two_Loaded = ()=> {
+					
+		setTimeout( ()=> {
+			media_query_writing_animation_two.textContent = "Code, Create and Develope";
+		},0 );
+	
+		setTimeout( ()=> {
+			media_query_writing_animation_two.textContent = "Code, Creer, Developper";
+		},4000 );
+	
+		setTimeout( ()=> {
+			media_query_writing_animation_two.textContent = "Code, Schaffen, Entwickeln";
+		},8000 );
+	
+	}
+		
+		
+	media_query_writing_animation_two_Loaded();
+	
+	setInterval(media_query_writing_animation_two_Loaded, 12000);
 
 
 
 
 
 
-
+	const media_query_writing_animation_three_Loaded = ()=> {
+					
+		setTimeout( ()=> {
+			media_query_writing_animation_three.textContent = "Solutions";
+		},0 );
+	
+		setTimeout( ()=> {
+			media_query_writing_animation_three.textContent = "Designs";
+		},4000 );
+	
+		setTimeout( ()=> {
+			media_query_writing_animation_three.textContent = "Experience";
+		},8000 );
+	
+	}
+		
+		
+	media_query_writing_animation_three_Loaded();
+	
+	setInterval(media_query_writing_animation_three_Loaded, 12000);
 
 ///First halft, Second Halft script begins///
 
