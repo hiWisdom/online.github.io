@@ -1404,9 +1404,10 @@ img{vertical-align:middle}a{color:inherit}
 
 
 
+
 .media_query_header {
   border: 3px solid white;
-  height: 25vh;
+  height: 26vh;
   background-image: linear-gradient(11deg, white, white, white, rgba(10, 10, 10, 1));
   border-bottom: 6.5px solid black;
 }
@@ -1414,7 +1415,7 @@ img{vertical-align:middle}a{color:inherit}
 .profile_intro {
   height: 26vh;
   width: 62%; 
-  border: 2px solid whitesmoke;
+  border: 2px solid black;
   padding: 0%;
   margin: 0%;
   background-color: rgba(242, 229, 229, 0.12);
@@ -1434,7 +1435,7 @@ img{vertical-align:middle}a{color:inherit}
 
 
 .profile_intro_paragraph_one {
-  margin-top: 1.35cm;
+  margin-top: 1.15cm;
   height: 5vh;
   border-top: none;
 }
