@@ -1392,6 +1392,7 @@ img{vertical-align:middle}a{color:inherit}
 
 @media(max-width:600px) {
 
+ 
 
 #deskTop {
   display: none;
@@ -1414,8 +1415,9 @@ img{vertical-align:middle}a{color:inherit}
 
 .profile_intro {
   height: 26vh;
-  width: 62%; 
-  border: 2px solid black;
+  width: 72.5%; 
+  border: 3.5px solid black;
+  border-right: none;
   padding: 0%;
   margin: 0%;
   background-color: rgba(242, 229, 229, 0.12);
@@ -1427,10 +1429,12 @@ img{vertical-align:middle}a{color:inherit}
   position: relative;
   border-top: 4px solid black;
   background: white;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bolder;
   text-align: left;
   font-display: fallback;
+  position: relative;
+  left:1.1%;
 }
 
 
@@ -1587,12 +1591,12 @@ img{vertical-align:middle}a{color:inherit}
 
 
   .c1_header_image {
-      width: 32.2% !important;
+      width: 25.5% !important;
       border:2.5px solid black !important;
       position:absolute !important;
       top:8.4% !important;
-      right:5%  !important;
-      height: 3cm !important;
+      right:2.2%  !important;
+      height: 2.89cm !important;
       background-repeat: no-repeat !important;
       background-size: contain !important;
   }
