@@ -678,7 +678,7 @@
 
           </div>
 
-          <p class="w3-medium" style="color:black;">Created by <a href="https://hiwisdom.github.io/online.github.io" target="_blank" class="w3-hover-text-green">Orodje<img src="pictures/20220522_165535.jpg" class="c1_footer_figimage"/></a> <!---1996 - ---><span class="date"></span>  &nbsp<span id="visitCount">0</span><span id="visitString"> Visits</span>
+          <p class="w3-medium" style="color:black;">Created by <a href="https://hiwisdom.github.io/online.github.io" target="_blank" class="w3-hover-text-green">Orodje<img src="pictures/20220522_165535.jpg" class="c1_footer_figimage"/></a> <!---1996 - ---><span class="date"></span>  &nbsp<span id="visitCountMedia">0</span><span id="visitString"> Visits</span>
           </p>
 
         </div>
@@ -694,13 +694,26 @@
 
 
 <script>
-  var countLiveVisit = document.querySelector("#visitCount");
-  updateLiveVisit();
-  function updateLiveVisit(){
+  //visitor count for desktop
+  var countLiveVisitForDesktop = document.querySelector("#visitCount");
+  updateLiveVisitForDesktop();
+  function updateLiveVisitForDesktop(){
     fetch('https://api.countapi.xyz/update/florin-pop/youtube/?amount=1')
           .then(res => res.json())
           .then(res =>{
-            countLiveVisit.innerHTML = res.value;
+            countLiveVisitForDesktop.innerHTML = res.value;
+          })
+  }
+
+
+    //visitor count for media screen
+    var countLiveVisitForMedia = document.querySelector("#visitCountMedia");
+    updateLiveVisitForMedia();
+  function updateLiveVisitForMedia(){
+    fetch('https://api.countapi.xyz/update/florin-pop/youtube/?amount=1')
+          .then(res => res.json())
+          .then(res =>{
+            countLiveVisitForMedia.innerHTML = res.value;
           })
   }
 </script>
